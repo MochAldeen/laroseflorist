@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import emailjs from "emailjs-com"; // Import EmailJS
+import emailjs from "emailjs-com"; 
 
 export default function ContactPage() {
   const { toast } = useToast();
@@ -19,13 +19,13 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Mengirimkan data form ke email toko menggunakan EmailJS
+
     emailjs
       .send(
-        "service_zsm2kbe",   // Ganti dengan Service ID Anda dari EmailJS
-        "template_ltk9gyx",   // Ganti dengan Template ID Anda dari EmailJS
-        formData,             // Mengirim data form
-        "T-mVeCGAU5WmgPOh0"        // Ganti dengan User ID Anda dari EmailJS
+        "service_zsm2kbe",   
+        "template_ltk9gyx",  
+        formData,            
+        "T-mVeCGAU5WmgPOh0"  
       )
       .then(
         (response) => {

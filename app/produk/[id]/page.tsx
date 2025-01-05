@@ -2,6 +2,7 @@ import { products } from "@/lib/products";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { WhatsAppButton } from "@/components/whatsapp-button";
 
 export function generateStaticParams() {
   return products.map((product) => ({
@@ -39,9 +40,16 @@ export default function ProductPage({ params }: { params: { id: string } }) {
               <p className="text-gray-600">{product.details || product.description}</p>
             </div>
             
-            <Button className="w-full bg-pink-600 hover:bg-pink-700">
-              Pesan Sekarang
-            </Button>
+            <WhatsAppButton
+              message={{
+                productName: product.name,
+                productId: product.id,
+                customMessage: "Mohon informasi lebih lanjut."
+              }}
+              className="w-full mb-4"
+            >
+              Pesan via WhatsApp
+            </WhatsAppButton>
             
             <div className="mt-8 border-t pt-8">
               <h2 className="text-lg font-semibold mb-4">Informasi Pengiriman</h2>

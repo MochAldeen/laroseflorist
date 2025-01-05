@@ -14,10 +14,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'LaRose Florist | Toko Bunga Premium di Indonesia',
     description: 'LaRose Florist menyediakan rangkaian bunga segar berkualitas tinggi untuk berbagai acara spesial Anda.',
-    images: ['/images/larose-hero.jpg'],
+    images: ['/images/logo.webp'],  // Menambahkan logo di Open Graph
   },
-};
-
+  icons: {
+    icon: '/images/logo.webp', // Favicon atau logo
+  },
+}
 export default function RootLayout({
   children,
 }: {

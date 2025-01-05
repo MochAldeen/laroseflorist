@@ -87,7 +87,7 @@ export function Footer() {
         
         <div className="mt-8 border-t border-gray-200 pt-8">
           <p className="text-center text-gray-400">
-            © {new Date().getFullYear()} LaRose Florist. Hak Cipta Dilindungi.
+            © {new Date().getFullYear()} LaRose Florist. Hak Cipta Dilindungi. MochAlden
           </p>
         </div>
       </div>
