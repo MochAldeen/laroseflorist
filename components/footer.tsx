@@ -64,8 +64,8 @@ export function Footer() {
             <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase">Kontak</h3>
             <ul className="mt-4 space-y-4">
               <li className="text-gray-600">
-                Jl. lupa<br />
-                Jakarta Barat, Indonesia
+                Jl. H Mean Ujung No. 156, RT 01/RW 10<br />
+                Tangerang, Indonesia
               </li>
               <li className="text-gray-600">
                 Tel: (+62) 859-6901-3111

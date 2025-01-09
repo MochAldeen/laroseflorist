@@ -51,7 +51,11 @@ export default function Home() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
-                  <p className="text-gray-600 mb-4">{product.description}</p>
+                  <p className="text-gray-600 mb-2">{product.description}</p>
+                  <p className="text-gray-600 mb-2">{product.quantity} {product.unit}</p>
+                  <p className="text-lg font-bold text-pink-600 mb-4">
+                    Rp {product.price.toLocaleString()}
+                  </p>
                   <Button asChild variant="outline" className="w-full">
                     <Link href={`/produk/${product.id}`}>Lihat Detail</Link>
                   </Button>

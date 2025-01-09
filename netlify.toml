@@ -1,8 +1,4 @@
 # example netlify.toml
-[build]
-  command = "npm run build"
-  functions = "netlify/functions"
-  publish = "npm run build"
 
   ## Uncomment to use this redirect for Single Page Applications like create-react-app.
   ## Not needed for static site generators.
@@ -21,8 +17,9 @@
   ## more info on configuring this file: https://ntl.fyi/file-based-build-config
 
 [build]
-  publish = "laroseflorist"
   command = "npm run build"
+  publish = "out"  # or replace with the correct directory like `.next`, depending on your build output
 
 [[plugins]]
   package = "@netlify/plugin-functions-install-core"
+
