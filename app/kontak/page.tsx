@@ -60,7 +60,8 @@ export default function ContactPage() {
               <div className="mt-8 space-y-4">
                 <div>
                   <h3 className="font-semibold">Alamat</h3>
-                  <p>Jl. lupa<br />Jakarta Barat, Indonesia</p>
+                  <p>Jl. H Mean Ujung No. 156,RT 01/RW 10<br />
+                  Tangerang, Indonesia</p>
                 </div>
 
                 <div>
