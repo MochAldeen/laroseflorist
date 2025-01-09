@@ -70,7 +70,7 @@ export default function ContactPage() {
 
                 <div>
                   <h3 className="font-semibold">Email</h3>
-                  <p>info@laroseflorist.com</p>
+                  <p>lroseflorist@gmail.com</p>
                 </div>
 
                 <div>
